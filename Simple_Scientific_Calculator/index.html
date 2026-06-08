@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Glass Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+    <!-- Left Side -->
+    <div class="calculator-section">
+
+        <div class="header">
+
+            <div class="logo">
+                <i class="fa-solid fa-calculator"></i>
+            </div>
+
+            <div>
+                <h1>Calculator</h1>
+                <p>Premium Glassmorphism Calculator</p>
+            </div>
+
+        </div>
+
+        <div class="calculator glass">
+
+            <div class="display">
+                <small>HISTORY</small>
+                <input type="text" id="display" readonly>
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="deleteLast()">C</button>
+                <button onclick="append('%')">%</button>
+                <button onclick="append('/')">÷</button>
+
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('*')">×</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('-')">−</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('+')">+</button>
+
+                <button class="zero" onclick="append('0')">0</button>
+                <button onclick="append('.')">.</button>
+
+                <button class="equal" onclick="calculate()">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- History Panel -->
+    <div class="history-panel glass">
+
+        <div class="history-head">
+            <h2>Calculation History</h2>
+            <button onclick="clearHistory()">Clear</button>
+        </div>
+
+        <ul id="historyList"></ul>
+
+        <!-- Scientific -->
+        <div class="scientific">
+
+            <h3>Keyboard</h3>
+
+            <div class="sci-grid">
+
+                <button onclick="append('(')">(</button>
+                <button onclick="append(')')">)</button>
+
+                <button onclick="append('Math.sqrt(')">√</button>
+
+                <button onclick="append('**2')">x²</button>
+                <button onclick="append('**3')">x³</button>
+
+                <button onclick="append('Math.sin(')">sin</button>
+                <button onclick="append('Math.cos(')">cos</button>
+                <button onclick="append('Math.tan(')">tan</button>
+
+                <button onclick="append('Math.log10(')">log</button>
+                <button onclick="append('Math.log(')">ln</button>
+
+                <button onclick="append('Math.PI')">π</button>
+                <button onclick="append('Math.E')">e</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="author-badge">
+    👨‍💻 Muhammad Kashif
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
