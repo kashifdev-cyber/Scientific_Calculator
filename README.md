@@ -32,4 +32,4 @@ This calculator includes multiple beautiful themes:
 
 ## 🚀 Demo
 
-👉 Live Demo:  
+👉 Live Demo:  https://kashifdev-cyber.github.io/Scientific_Calculator/
